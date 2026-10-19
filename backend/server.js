@@ -70,7 +70,7 @@ app.delete("/note-saver/:id",async(req,res)=>{
     }catch(error){
         console.log("Error deleting Notes:",error);
 
-        res.status(500),json({
+        res.status(500).json({
             success:false,
             message:"Failed to delete Notes"
         })
