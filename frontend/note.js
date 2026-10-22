@@ -2,7 +2,7 @@ const notesList=document.getElementById("notesList")
 
 async function getNotes() {
     try{
-        const response=await fetch("/note-saver")
+        const response=await fetch("https://notes-saver-frontend.vercel.app/note-saver")
         const data=await response.json()
 
         notesList.innerHTML=""

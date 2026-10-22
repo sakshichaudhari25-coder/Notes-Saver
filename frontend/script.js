@@ -5,7 +5,7 @@ notes.addEventListener("submit",async(e)=>{
     const title=document.querySelector("#title").value
     const content=document.querySelector("#content").value
         try{
-    const response=await fetch("/note-saver",{
+    const response=await fetch("https://notes-saver-frontend.vercel.app/note-saver",{
         method:"POST",
         headers:{
             "Content-type":"application/json"
